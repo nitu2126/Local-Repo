@@ -145,4 +145,55 @@ Basic git commands :
               git push origin main : to upload local content on github 
               git push - u origin main : 
                 -u flag : to set upstream. If we are going to work on this project for a long time, we can uuse this flag then we dont have to write origin main every time. 
-                
+
+Git Workflow : 
+    1) Create Github repo
+    2) Clone in local system 
+    3) Make changes
+    4) Add 
+    5) Commit 
+    6) Push 
+
+Git Branches : 
+    Copy of main branch 
+    After commiting changes into each branch we finally merge them.
+    To work on differnt features without depending on other person for changes to be done, we can use branches.
+
+    Commands: 
+            ~ git branch 
+             to check the current branch we aare working 
+
+            ~ git branch -M new_name 
+             to change branch name 
+
+            ~ git checkout <-another branch name->
+             to go from one branch to another branch 
+            
+            ~ git checkout -b <-new branch name->
+             to create new branch 
+             check with git branch 
+             green coloured is current branch 
+            
+            ~ git branch -d <-branch name to delete-> 
+             to delete branch 
+
+             if we are in the same branch that we want to delete, we get error.
+             checkout from branch and then delete the branch. 
+
+             When you are in another branch and making changes in the files, the changes are done on the copy of the files and not on the main branch. 
+
+             Push this changes using command : git push origin feature1 as we have made changes in feature1 branch.
+
+Merging code : 
+    1) Through command line. 
+        ~ git diff <-branch name->
+
+         to compare branches, commits, files and more.
+        
+        ~ git merge <-branch name->
+         to merge two branches.
+    
+    2) Create Pull Request. 
+       using github.
+       It lets you tell others about changes you've pushed to a branch in a repository on GitHub. 
+       Decided and reviewed by main branch operator. 
