@@ -145,3 +145,4 @@ Basic git commands :
               git push origin main : to upload local content on github 
               git push - u origin main : 
                 -u flag : to set upstream. If we are going to work on this project for a long time, we can uuse this flag then we dont have to write origin main every time. 
+                
