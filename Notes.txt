@@ -114,4 +114,34 @@ Basic git commands :
             If new file or folder is created in local machine check if its git repo or not using "ls -a" command.
             If it dont contain ".git" folder, use command "git init". 
             It will show "Initialized empty Git repository" and now check with "ls -a". 
+
+            As we have created local git repository which is not on Github. To add on github we have to create new Repo on github and then push this files on that repo. 
+            After creating new repo on github you will see some instructions as we have created new repo so we have to change its name to origin and branch name to main. 
+
+            Before push we have to run following commands : 
+            ~ git remote add origin <-link->
+              
+              git remote add : we are adding new github repo 
+              origin : we have to give name 
+              <-link-> : link of new repo.
+
+            ~ git remote -v 
+              
+              to check what origin is set 
+              i.e. to verify remote 
             
+            ~ git branch 
+
+              to check branch 
+              branch : If multiple teams are working on one project , they works on copy of main project. Each individual copy is called branch.
+
+            ~ git branch -M new_name
+
+              to change name of branch 
+              ex. to set new name as main : git branch -M main  
+
+            ~ git push origin main / git push -u origin main 
+
+              git push origin main : to upload local content on github 
+              git push - u origin main : 
+                -u flag : to set upstream. If we are going to work on this project for a long time, we can uuse this flag then we dont have to write origin main every time. 
