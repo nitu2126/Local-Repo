@@ -232,3 +232,4 @@ Undoing Changes :
 
 Fork :  A new repository that shares the code and visibility settings with the original "upstream" repository. 
         Fork is a rough copy with same settings and same code. 
+        To copy the code and add to our new repository we use fork.
