@@ -177,4 +177,7 @@ Git Branches :
             ~ git branch -d <-branch name to delete-> 
              to delete branch 
 
-             if we are int the same branch that we want to delete, we get error.
+             if we are in the same branch that we want to delete, we get error.
+             checkout from branch and then delete the branch. 
+
+             When you are in another branch and making changes in the files, the changes are done on the copy of the files and not on the main branch. 
