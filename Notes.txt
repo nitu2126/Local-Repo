@@ -197,3 +197,10 @@ Merging code :
        using github.
        It lets you tell others about changes you've pushed to a branch in a repository on GitHub. 
        Decided and reviewed by main branch operator. 
+
+Getting merged changes from GitHub into Local machine main repo : 
+    Use Pull command : 
+        ~ git pull origin main 
+         to fetch and download content from a remote repo and immediately update the local repo to match that content.
+
+Resolving Merge Conflicts : 
