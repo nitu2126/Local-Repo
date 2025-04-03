@@ -204,3 +204,4 @@ Getting merged changes from GitHub into Local machine main repo :
          to fetch and download content from a remote repo and immediately update the local repo to match that content.
 
 Resolving Merge Conflicts : 
+    If we are doing the changes on the same line on both branches conflict occurs and we have to select one of them.
