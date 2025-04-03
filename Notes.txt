@@ -1,0 +1,117 @@
+Git : 
+    Version control system is a tool to track the changes(history) in code.
+    It is popular 
+    Open source 
+    fast and scalable 
+    helps in collaboration 
+
+Github : https://github.com
+    Website that allows developers to store and manage their code using git.
+    Projects are uploaded in the form of folders. This folders are called as "Repositories". 
+    
+    1) Create profile.
+    2) Create new repository.
+    3) README file : Special file which includes all the related information of your project.
+    Initial commit = first change
+    Commit : Finalize change
+
+    First ADD then Commit.
+    We can add HTML syntax to make changes like adding text to new line.
+
+GIT : Set up in laptop.
+    Setting up git.
+    Download : https://git-scm.com/downloads/win
+    After installing check for the command : git --version which gives the version of the installed git. 
+    ls and pwd command also works. 
+
+Configuring git: 
+    Telling GIT that in which account we are going to make changes from GIT to GITHUB.
+    1) git config --global user.name "nitu2126"
+        git config : congigure the git 
+        --global : on global level 
+                global : In complete system, it will change using the same email id.
+                local : In specific repo, in specific project we are changing from different account. 
+        user.name : Your name.
+
+    2) git config --global user.email "nitishghadage2126@gmail.com"
+        for setting email id
+    3) git config --list
+        to check what we have configured. 
+    
+
+Open gitbash : 
+    ~ symbol: shows we are in root directory(main folder). 
+    type above commands to configure git.
+
+Basic git commands :
+    clone : cloning the repository on your local machine. 
+            ~ git clone <link>
+            ex. git clone https://github.com/nitu2126/GitLearning-ApnaCollege.git
+
+            All files from repo are cloned into local machine. 
+           
+            Use cd command to change directory.
+            ex. ~ cd GitLearning-ApnaCollege
+
+            To see all files in the directory use ls command.
+            ~ ls 
+
+            To see hidden files inside the directory, use ls -a command
+            ~ ls -a 
+            >> each folder that we are using to make changes have .git folder in them. 
+
+    status : display the state of the code.
+            ~ git status
+
+            >> Up to date if no changes are done currently.
+
+            If we modify the file in local machine and not on github, vs code will show "M" Symbol for modified.
+            check again with git status
+
+            First Add and then Commit.
+
+            Status in git:
+                untracked : new files that git doesn't yet track. New file , that git dont know.
+                modified : You modified the file(changes done)
+                unmodified : unchanged 
+                staged : when we add files it goes into this mode. File added but not committed.
+                commit : save changes confirm.
+
+    add : add new or changed files in your working directory to the git staging area.
+            ~ git add <file name>
+               
+               ex. ~ git add index.html (to add specific fie "index.html into staged area.)
+               ex. ~ git add . 
+
+    commit : it is a record of change.
+            ~ git commit -m "some message"
+                -m : for commit message 
+                some mesage: meaningful message to know about changes we made.
+
+                ex. ~ git commit -m "Add new paragraph & designation"
+
+                check git status. 
+                >> Your branch is ahead of 'origin/main' by 1 commit.
+                means local system is ahead in commit, as this changes are not done on github.
+
+    push : upload local repo content to remote repo
+            ~ git push origin main 
+
+            from local -------> remote (github)
+            
+            origin : Original repository name from which we copied into local machine.
+                     name given to the repo. 
+            main :   main branch in origin repo 
+
+    init : used to create new git repository
+           ~ git init
+
+            on command line : 
+            cd : to change directory 
+            cd .. : to go backward in directory 
+            mkdir : to make new directory (folder)
+
+            If new file or folder is created in local machine check if its git repo or not using "ls -a" command.
+            If it dont contain ".git" folder, use command "git init". 
+            It will show "Initialized empty Git repository" and now check with "ls -a". 
+            
