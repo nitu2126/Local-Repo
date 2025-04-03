@@ -205,3 +205,5 @@ Getting merged changes from GitHub into Local machine main repo :
 
 Resolving Merge Conflicts : 
     If we are doing the changes on the same line on both branches conflict occurs and we have to select one of them.
+
+    Using git merge command on local system to merge two branches. 
