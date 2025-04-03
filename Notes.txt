@@ -183,3 +183,17 @@ Git Branches :
              When you are in another branch and making changes in the files, the changes are done on the copy of the files and not on the main branch. 
 
              Push this changes using command : git push origin feature1 as we have made changes in feature1 branch.
+
+Merging code : 
+    1) Through command line. 
+        ~ git diff <-branch name->
+
+         to compare branches, commits, files and more.
+        
+        ~ git merge <-branch name->
+         to merge two branches.
+    
+    2) Create Pull Request. 
+       using github.
+       It lets you tell others about changes you've pushed to a branch in a repository on GitHub. 
+       Decided and reviewed by main branch operator. 
